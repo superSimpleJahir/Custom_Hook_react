@@ -46,3 +46,30 @@ h4 {
 .albumsGrid .album h2 {
   font-size: 22px;
 }
+
+
+@media only screen and (max-width: 900px) {
+  .albumsGrid,
+  .commentsGrid,
+  .PostGrid,
+  .todosGrid,
+  .usersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .container{
+    max-width: 500px;
+  }
+  .albumsGrid,
+  .commentsGrid,
+  .PostGrid,
+  .todosGrid,
+  .usersGrid {
+    display: block;
+    text-align: center;
+  }
+  
+}
