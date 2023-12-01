@@ -1,0 +1,22 @@
+nav.flex {
+  margin: 20px auto;
+}
+
+ul.flex {
+  gap: 30px;
+}
+
+nav.flex,
+ul.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li a{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo{
+  cursor: pointer;
+}
