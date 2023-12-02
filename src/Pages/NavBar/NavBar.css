@@ -1,5 +1,10 @@
 nav.flex {
-  margin: 20px auto;
+  /* margin: 20px auto; */
+  
+  padding: 20px 5px ;
+}
+nav.container {
+  background-color: antiquewhite;
 }
 
 ul.flex {
@@ -15,6 +20,7 @@ ul.flex {
 nav li a{
   font-size: 20px;
   font-weight: bold;
+  color: #000;
 }
 
 .logo{

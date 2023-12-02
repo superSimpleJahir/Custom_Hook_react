@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 const NavBar = () => {
   return (
@@ -8,19 +9,22 @@ const NavBar = () => {
 
       <ul className="flex">
         <li>
-          <a href="">Albums</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="">Comments</a>
+          <Link to="/albums">Albums</Link>
         </li>
         <li>
-          <a href="">Posts</a>
+          <Link to="/comments">Comments</Link>
         </li>
         <li>
-          <a href="">Todos</a>
+          <Link to="/posts">Posts</Link>
         </li>
         <li>
-          <a href="">Users</a>
+          <Link to="/todos">Todos</Link>
+        </li>
+        <li>
+          <Link to="/users">Users</Link>
         </li>
       </ul>
     </nav>
