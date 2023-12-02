@@ -1,6 +1,7 @@
 import Comment from "../../Component/Comment/Comment";
 import useFetch from "../../CustomHook/useFetch";
 import NavBar from "../NavBar/NavBar";
+import Footer from "./../Footer/Footer";
 
 const Comments = () => {
   const [data] = useFetch("https://jsonplaceholder.typicode.com/comments");
@@ -14,6 +15,7 @@ const Comments = () => {
           {data && data.map((value) => <Comment key={value.id} value={value} />)}
         </div>
       </section>
+      <Footer />
     </>
   );
 };

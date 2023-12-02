@@ -1,6 +1,7 @@
 import User from "../../Component/User/User";
 import NavBar from "../NavBar/NavBar";
 import useFetch from "./../../CustomHook/useFetch";
+import Footer from "./../Footer/Footer";
 
 const Users = () => {
   const [data] = useFetch("https://jsonplaceholder.typicode.com/users");
@@ -13,6 +14,7 @@ const Users = () => {
           {data && data.map((value) => <User key={value.id} value={value} />)}
         </div>
       </section>
+      <Footer />
     </>
   );
 };

@@ -1,7 +1,8 @@
 nav.flex {
-  /* margin: 20px auto; */
-  
   padding: 20px 5px ;
+  position: fixed;
+  top: 0;
+  left: 75px;
 }
 nav.container {
   background-color: antiquewhite;

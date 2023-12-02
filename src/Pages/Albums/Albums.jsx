@@ -1,6 +1,7 @@
 import Album from "../../Component/Album/Album";
 import useFetch from "../../CustomHook/useFetch";
 import NavBar from "./../NavBar/NavBar";
+import Footer from './../Footer/Footer';
 
 const Albums = () => {
   const [data] = useFetch("https://jsonplaceholder.typicode.com/albums");
@@ -14,6 +15,7 @@ const Albums = () => {
           {data && data.map((value) => <Album key={value.id} value={value} />)}
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

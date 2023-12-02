@@ -1,6 +1,7 @@
 import Post from "../../Component/Post/Post";
 import NavBar from "../NavBar/NavBar";
 import useFetch from "./../../CustomHook/useFetch";
+import Footer from "./../Footer/Footer";
 
 const Posts = () => {
   const [data] = useFetch("https://jsonplaceholder.typicode.com/posts");
@@ -13,6 +14,7 @@ const Posts = () => {
           {data && data.map((value) => <Post key={value.id} value={value} />)}
         </div>
       </section>
+      <Footer />
     </>
   );
 };

@@ -18,6 +18,14 @@ h4 {
   font-size: 40px;
   margin: 40px 0px;
 }
+.todosSection,
+.albumsSection,
+.commentsSection,
+.postsection,
+.usersSection
+{
+  margin-top: 120px;
+}
 
 .albumsGrid,
 .commentsGrid,
